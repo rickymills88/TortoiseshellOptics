@@ -1,0 +1,268 @@
+html {
+  font-family: Helvetica;
+  font-size: 18px;
+  line-height: 1.4rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width:1024px){
+.container{
+  width: 100%;
+  }
+
+}
+
+/*main banner*/
+.banner {
+  background-image: url("./images/glasses-bg.png");
+  height: 30rem;
+  padding-top: 1rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width:1024px){
+  .banner{
+    height: 22rem;
+    padding-top: 0;
+    background-size: left;
+  }
+}
+
+@media only screen and (max-width:856px) {
+  .banner {
+    height: 17rem;
+
+    background-position: left;
+  }
+}
+
+
+.nav-banner {
+  padding: 1rem;
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+@media only screen and (max-width:856px) {
+  .nav-ul {
+    display: none;
+  }
+
+  .nav-title h4 {
+    display: none;
+  }
+}
+
+ul li {
+   display: inline;
+}
+
+li {
+  padding: 0rem 2rem;
+}
+
+.menu {
+  display: none;
+}
+@media only screen and (max-width:856px) {
+  .menu {
+    display: inline;
+  }
+}
+
+
+.nav-title {
+  display: flex;
+  align-items: center;
+}
+
+.nav-title h4 {
+  padding-left: 1rem;
+
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+.nav-title img {
+  padding-left: 2rem;
+}
+
+
+.headline {
+  position: relative;
+  float: right;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  top: 10rem;
+  margin-right: -2rem;
+}
+
+@media only screen and (max-width:1024px){
+  .headline {
+    top: 5rem;
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width:856px) {
+  .headline {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    margin-right: 0;
+    top: 9rem;
+
+  }
+}
+
+.headline h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+}
+
+@media only screen and (max-width:1024px) {
+  .headline h1 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width:856px) {
+  .headline h1 {
+    font-size: 1rem;
+  }
+}
+
+
+/*info section; logos, philosophy, apppointments*/
+.info {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 856px) {
+  .info {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 3.77rem;
+  }
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 3rem;
+  height: 8rem;
+  width: 5rem;
+}
+
+@media only screen and (max-width: 856px) {
+  .logos {
+    margin: 0 0 1.54rem;
+  }
+
+  .logos h4 {
+    font-size: 0.77rem;
+  }
+}
+
+
+.logos img {
+  width: 5rem;
+}
+
+.logos img.paper-icon {
+  width: 3.5rem;
+}
+
+.philo-appt {
+ display: flex;
+ justify-content: center;
+}
+
+@media only screen and (max-width: 856px) {
+  .philo-appt {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.philo-appt h4 {
+  background-color: cadetblue;
+  width: 10rem;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+}
+@media only screen and (max-width: 856px) {
+  .philo-appt h4{
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0rem;
+  }
+}
+
+
+.philo-appt p {
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 856px) {
+  .philo-appt p {
+    font-size: 0.77rem;
+    padding: 1rem 0.5rem 4rem 0.5rem;
+  }
+}
+
+
+.philo, .appt {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 856px) {
+  .philo, .appt {
+    width: 100%;
+    margin: 1rem 1rem 4rem 1rem;
+  }
+}
+
+/*footer*/
+footer {
+  display: flex;
+  align-items: center;
+  background-color: azure;
+  padding: 4rem;
+}
+
+footer h4 {
+  padding-left: 1rem;
+}
+
+@media only screen and (max-width: 856px) {
+  footer h4 {
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
+  }
+}
